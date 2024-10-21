@@ -1,0 +1,22 @@
+defaults:
+  - algorithm: off_omd
+
+training:
+  num_envs: 5
+  num_iterations: 100
+
+evaluation:
+  num_episodes: 10_000
+  num_envs: 5
+
+offline: true
+experiment_name: train
+seed: 42
+num_seeds: 1
+use_jit: true
+gpu_id: 0
+num_gpus: 4
+logdir: ???
+dataset_path: "datasets/exploration_expert.pkl"
+environment: four_rooms
+task: exploration

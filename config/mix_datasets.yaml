@@ -1,0 +1,15 @@
+defaults:
+  - algorithm: off_omd  
+
+expert_checkpoint: dataset/policy_checkpoints/navigation_expert.pkl
+config_file: # path to a logged config file (in logs/...)
+seed: 42
+num_datasets: 100
+dataset_dir: "datasets/generated"
+base_datasets: [
+  "datasets/navigation_expert.pkl",
+  "datasets/navigation_intermediate.pkl",
+  "datasets/navigation_random.pkl",
+]
+environment: four_rooms
+task: navigation

@@ -1,0 +1,9 @@
+_target_: offline_mirror_descent.make_learner
+_partial_: true
+lr: 0.001
+temperature: 20.0
+alpha: 0.99
+discount_factor: 0.99
+cql_weight: 3.0
+num_batches: 2000
+batch_size: 512

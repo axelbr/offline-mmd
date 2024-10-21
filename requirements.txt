@@ -1,0 +1,9 @@
+jax[cuda12]
+# jax[cpu] on a machine without a GPU
+gymnax
+optax
+distrax
+flax
+flashbax
+hydra-core
+joblib
