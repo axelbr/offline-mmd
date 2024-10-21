@@ -185,7 +185,7 @@ class FourRoomEnv(Environment):
             max_dist = jnp.abs(self.target[0] - 1) + jnp.abs(self.target[1] - 1)
             congestion = state_density * jnp.sum(jnp.abs(self.action_map[action]))
             crowding_reward = -jnp.log(jnp.clip(state_density, 1e-6, 1.0)) / -jnp.log(1e-6)
-            return -1 * dist / max_dist # + crowding_reward -  congestion
+            return -1 * dist / max_dist + crowding_reward - congestion
         else:
             raise ValueError("Invalid task")
         
