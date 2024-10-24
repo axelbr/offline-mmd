@@ -1,5 +1,7 @@
 # Scalable Offline Reinforcement Learning for Mean Field Games
 
+Official code for [Offline Munchausen Mirror Descent](https://arxiv.org/abs/2410.17898).
+
 Dependency installation: ```pip install -r requirements.txt```.
 
 The main file for training is `src/train.py`.
